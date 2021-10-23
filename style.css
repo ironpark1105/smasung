@@ -1,0 +1,392 @@
+/* style.css */
+:root {
+    --bg-color: #ddd;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  body {
+    font-family: "맑은 고딕", sans-serif;
+    color: #333;
+    background: #f7f7f7
+  }
+  .material-icons{
+    vertical-align: middle;
+  }
+  nav{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+  }
+  .nav-box{
+    padding-top: 30px;
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+  
+  }
+  .nav-ul{
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 60px;
+  }
+  .nav-ul2{
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .nav-ul2 li{
+    margin-left: 27px;
+  }
+  .nav-ul li{
+    margin-right: 44px;
+  }
+  .logo{
+    width: 118px;
+    height: 20px;
+    background-image: url(./images/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  section, .container {
+    width: 1200px;
+    margin: 0 auto;
+    background: #f7f7f7
+  }
+  
+  .breadCrumb-box{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+  }
+  .breadCrumb {
+    padding: 1em 0;
+    color: #8f8f8f;
+    font-size: 13px;
+  }
+  #product-detail {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  #product-detail figure {
+    width: 65%;
+    /* outline: 1px solid red; */
+  }
+  
+  #product-detail figure img {
+    width: 100%;
+  }
+  
+  #product-detail .info {
+    
+    border: 1px solid #c5c5c5;
+    width: 35%;
+    /* outline: 1px solid red; */
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+  }
+  
+  
+  /* 상세정보 */
+  #product-detail .info h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  #product-detail .product-code {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  #product-detail .price-box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .option{
+      background: var(--bg-color);
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+  }
+  .option > li{
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .option > li:last-child{
+      margin-bottom: 0;
+  }
+  .option > li h3{
+      color: #666;
+      font-weight: normal;
+      font-size: 16px;
+  }
+  .option .colorOption .color{  
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+    text-indent: -9999px;
+
+  }
+  .color-list .color:nth-child(1){
+      background: #000;
+  }  
+  
+  .color-list .color:nth-child(2){
+    background: #223631;
+    }  
+   .color-list .color:nth-child(3){
+    background: #cac5c2;
+    }  
+    input, select{
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .numberOption .count{
+        width: 4em;
+        text-align: center;
+    }
+    .total-price-box{
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+
+    }
+    .total-price{
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .button-group{
+        display: flex;
+    }
+    .btn{
+        width: 50%;
+        padding: 10px 20px ;
+        border-right: 2px solid #000;
+        font-size: 16px;
+        cursor: pointer;
+
+    }
+
+    .carBtn{
+        margin-right: 5px;
+    }
+    .buyBtn{
+        margin-left: 5px;
+        background: #000;
+        color: #fff;
+    }
+/* 여기 제품설명 */
+
+.footer{
+  width: 100%;
+  height: 520px;
+  display: flex;
+  border-top: 1px solid #ccc;
+  
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+}
+  .footer-nav-box{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .footer-nav-box:nth-child(2){
+    margin-left: 145px;
+  }
+
+  .footer-nav-main{
+    margin: 0 auto;
+  }
+    .footer-nav{
+      margin: 0 auto;
+      display: flex;
+    }
+    .footer-nav-main h3{
+      font-size: 18px;
+      margin-top: 42px;
+      margin-bottom: 32px;
+    }
+    .footer-nav-ul{
+      display: flex;
+    }
+    
+    .footer-nav-ul li{
+      font-size: 14px;
+      margin-top: 22px;
+    }
+    .footer-nav-ul li:first-child{
+      font-size: 14px;
+      margin-top: 0px;
+    }
+    
+    .footer-nav-ul ul:nth-child(2){
+      margin-left: 120px;
+    }
+
+    .footer-nav-ul li a:hover{
+      font-weight: 600;
+    }
+  
+
+
+    .footer-nav-box2{
+      display: flex;
+      margin: 0 auto;
+    }
+    
+    .footer-nav-box2:nth-child(2){
+      margin-left: 50px;
+    }
+  
+    .footer-nav-main2{
+      margin: 0 auto;
+    }
+    .footer-nav-main2 h3{
+      font-size: 18px;
+      margin-top: 42px;
+      margin-bottom: 32px;
+    }
+    
+    .footer-nav-main2 .footer-nav-ul{
+      display: flex;
+    }
+    
+    .footer-nav-ul a span{
+      vertical-align: bottom;
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    footer{
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+    }
+    /* 풋터 */
+    
+    .Samsung-footer{
+      
+      color: #707070;
+      width: 1200px;
+      margin: 0 auto;
+      font-size: 12px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      
+    }
+    .Samsung-footer-ul{
+      display: flex;
+      
+    }
+    .Samsung-footer-ul li,  .Samsung-footer-ul2 li{
+      color: #707070;
+      padding: 0 20px;
+      border-right: 1px solid #707070;
+    }
+    .Samsung-footer-ul li:first-child,  .Samsung-footer-ul2 li:first-child{
+      padding-left: 0;
+    }
+    .Samsung-footer-ul li:last-child,  .Samsung-footer-ul2 li:last-child{
+      border: none;
+    }
+    .Samsung-footer-ul li:nth-child(3){
+      color: white;
+      background-color: #707070;
+    }
+    .Samsung-footer-ul li:nth-child(3) a{
+      color: white;
+    }
+    .Samsung-footer-ul2{
+      display: flex;
+      margin-top: 10px;
+    }
+    
+    .Samsung-footer-ul li a,  .Samsung-footer-ul2 li a{
+      color: #707070;;
+    }
+    .Samsung-footer p{
+      margin-top: 10px;
+    }
+
+
+    .notice{
+      width: 1200px;
+      height: 100px;
+      font-weight: 600;
+    
+      margin: 0 auto;
+    }
+    .notice-box{
+      width: 1200px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    
+    .notice ul, .notice-ul2{
+      display: flex;
+      font-size: 14px;
+    }
+    .notice ul li a, .notice-ul2 li a{
+      padding: 0 10px;
+    }
+    .notice ul li{
+      border-right: 1px solid #707070;
+    }
+    .notice ul li:last-child{
+      border-right: none;
+    }
+    .notice-ul2{
+      
+      margin-left: 30px;
+      border: 1px solid #b2b2b2;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .notice-logo{
+      margin-left: auto;
+    }
+    .notice-icon{
+      margin-left: 20px;
+    }
+
+    .notice-ul-box{
+      vertical-align: middle;
+    }
